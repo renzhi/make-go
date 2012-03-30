@@ -1,0 +1,21 @@
+This is a test project to show how to write Makefile for 
+a Go project with multiple packages, and also a test directory.
+
+To compile all source codes and build the main executable, run:
+
+  make
+
+To compile all test source codes and build the test executables, run:
+
+  make test
+
+All object files are put in the obj directory. All executables are
+in the bin directory.
+
+If you add a new package, with its own sub-directory under src, 
+you have to add the package name to the line
+
+PKGS           := hello foo
+
+in the Makefile. That's all you have to do to maintain this Makefile.
+
